@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web App - Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+        <h1 style="width: 100%;
+                  font-size: 35px;
+                  font-weight: bold;">Simple Interest Calculator</h1>
+        <form id="form1" onsubmit="return validPrin()">
+		<div class="wrapper">
+        <div class="one">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount </div>
+		<div class="two" style="width:100px"> <input type="number"  id="principal"> </div> 
+        <div class="three">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interest Rate </div>
+		<div class="four"> <input type="range" id="rate" min=1 max=20 value="default_val" step=0.25 default_val=10.25 onchange="updateRate()"> <span id="rate_val"> 10.25% </span> </div> 
+        <div class="five">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No. of Years </div>
+		<div class="six"> <select id="years" type="number"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select> </div>
+		<div class="seven"><button onclick="compute()">Compute Interest</button></div>
+		</div><br/>
+		<span id="result"></span><br>
+        <span id="result"></span>
+        <footer>
+            &#169; Everyone Can Get Rich<br/>
+			This Calculator belongs to Nicolás Córdoba<br>
+        </footer>
+        </div>
+    </body>
+</html>

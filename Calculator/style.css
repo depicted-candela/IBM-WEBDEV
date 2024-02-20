@@ -1,0 +1,90 @@
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
+
+h1 {
+    color:grey;
+    font-family:'monospace','andale';
+    font-variant: bolder;
+}
+
+.maindiv {
+    background-color:white;
+    color:black;
+    width:fit-content;
+    padding:20px;
+    border-radius:25px;
+    align:center; 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    grid-gap: 5px;
+}
+
+.one {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+}
+
+.two {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+}
+
+.three {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+    line-height: 40px;
+}
+
+.four {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.five {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+}
+
+.six {
+    display: grid;
+    justify-content: left;
+    align-content: left;
+}
+
+.seven {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-row: 7;
+    grid-column: 1 / 2;
+}
+
+._wrapper {
+    grid-gap: 5px;
+}
+
+wrapper, _wrapper {
+    margin-top: 50px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.last_highlight {
+  background-color: yellow;
+}
+
